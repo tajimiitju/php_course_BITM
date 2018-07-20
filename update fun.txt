@@ -1,0 +1,19 @@
+{
+        try {
+
+            $stmt = $this->con->prepare("UPDATE `php-63`.`busness` SET `Product_title` = :Product_title, `Product_price` = :Product_price, `Category` = :Category, `Description` = :Description, `image` = :image WHERE `busness`.`id` = :id;"); //update table name
+            $stmt->bindValue(':name', $this->name, PDO::PARAM_INT);
+            $stmt->bindValue(':department', $this->department, PDO::PARAM_INT);
+            $stmt->bindValue(':address', $this->address, PDO::PARAM_INT);
+            $stmt->bindValue(':image', $this->image, PDO::PARAM_INT);
+            $stmt->bindValue(':id', $this->id, PDO::PARAM_INT);
+            $stmt->execute();
+            if($stmt){
+                $_SESSION['update'] = 'Data successfully Updated !!';
+                header('location: index.php');
+            }
+        } catch (PDOException $e) {
+            print "Error!: " . $e->getMessage() . "<br/>";
+            die();
+        }
+    }
