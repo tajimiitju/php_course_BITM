@@ -1,0 +1,20 @@
+<?php
+include_once '../../vendor/autoload.php';
+//use App\Connection;
+$user = new App\User\User();
+$_POST['image'] = $user->upload();
+$_POST['pay_method'] = implode(', ',$_POST['pay_method']);
+$_POST['start_date'] = $_POST['sday'].' - '.$_POST['smonth'].' - '.$_POST['syear'];
+$_POST['end_date'] = $_POST['eday'].' - '.$_POST['emonth'].' - '.$_POST['eyear'];
+var_dump($_POST);
+$user->set($_POST)->store();
+die();
+include_once '../../vendor/autoload.php';
+//use App\Connection;
+$admin = new App\Admin\Admin();
+$_POST['image'] = $admin->upload();
+$_POST['pay_method'] = implode(', ',$_POST['pay_method']);
+$_POST['start_date'] = $_POST['sday'].' - '.$_POST['smonth'].' - '.$_POST['syear'];
+$_POST['end_date'] = $_POST['eday'].' - '.$_POST['emonth'].' - '.$_POST['eyear'];
+var_dump($_POST);
+//$admin->set($_POST)->store2();

@@ -1,0 +1,36 @@
+{{ asset('admin/    ') }}
+
+@extends('admin/master')
+
+@section('content')
+
+ 
+
+@stop
+
+
+
+
+
+{{url('/ ')}}
+
+
+laravel start: php artisan serve
+ 
+laravel download: 
+
+Via Composer Create-Project
+
+Alternatively, you may also install Laravel by issuing the Composer create-project command in your terminal:
+
+composer create-project --prefer-dist laravel/laravel blog
+
+
+...............
+migrate...
+in .env file...
+DB_DATABASE=php-63
+DB_USERNAME=root
+DB_PASSWORD=
+
+/////////////////

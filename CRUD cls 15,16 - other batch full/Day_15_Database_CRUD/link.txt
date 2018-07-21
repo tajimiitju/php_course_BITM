@@ -1,0 +1,5 @@
+http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers
+
+https://code.tutsplus.com/tutorials/why-you-should-be-using-phps-pdo-for-database-access--net-12059
+
+https://code.tutsplus.com/tutorials/php-database-access-are-you-doing-it-correctly--net-25338

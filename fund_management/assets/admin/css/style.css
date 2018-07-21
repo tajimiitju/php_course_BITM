@@ -1,0 +1,97 @@
+/*------------page content area---------------*/
+
+.tile_count {
+    margin-bottom: 0;
+}
+
+.nav-md .container.body .right_col {
+    margin-left: 230px;
+    padding: 10px 50px 0 0;
+}
+
+.site_title>span {
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+.dob {
+    background: #adfd none repeat scroll 0 0;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    padding: 7px 6px;
+}
+
+.form-group.mr10 {
+    margin-top: 10px;
+}
+
+.form-check.form-check-inline {
+    display: inline-block;
+}
+
+.payoption {
+    border: 1px solid #d9d9d9;
+    margin-top: 15px;
+    padding: 0 56px;
+}
+
+.portwallet_cardlist li .rocket {
+    background: rgba(0, 0, 0, 0) url("https://payment.portwallet.com/assets/payment-jquery/images/p-imagesall.png") no-repeat scroll -100px -173px;
+}
+
+
+/*Event Area*/
+
+.event-area {
+    padding-left: 53px;
+}
+
+.layer img {
+    width: 282px;
+}
+
+.layer {
+    border: 1px solid #00a8e7;
+    padding: 13px 4px 119px;
+}
+
+.layer:hover {
+    -webkit-box-shadow: 0 0 10px #4bc6ff;
+    box-shadow: 0 0 10px #4bc6ff;
+    opacity: 1;
+}
+
+.event-detail {
+    padding: 23px;
+    text-align: center;
+}
+
+.event-detail>a {
+    background: #31b0d5 none repeat scroll 0 0;
+    border-radius: 11px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 13px 30px;
+    color: #fff;
+}
+
+.event-footer a {
+    padding: 8px 19px;
+}
+
+.single-item:hover {
+    -webkit-box-shadow: 0 0 10px #4bc6ff;
+    box-shadow: 0 0 10px #4bc6ff;
+    opacity: 1;
+}
+
+.single-item {
+    border: 1px solid #00a8e7;
+    padding: 13px 4px 119px;
+}
+
+.single-item img {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}

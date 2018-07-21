@@ -1,0 +1,1740 @@
+/*******************************************************************************/
+Author: princ-imran Version: 1.0
+/*******************************************************************************
+				TABLE OF CONTENTS
+*******************************************************************************
+
+
+
+
+****************************************************/
+
+
+/*---------------------------------------------------
+            0. Base css
+---------------------------------------------------*/
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 10px;
+    font-weight: 700;
+    color: #333;
+}
+
+p {
+    margin: 0 0 10px
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #666666;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+a {
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+a:hover,
+a:focus {
+    outline: medium none;
+    text-decoration: none;
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+
+/*---------------------------------------------------
+            1. Theme color  css
+---------------------------------------------------*/
+
+a.slide-btn:last-child,
+.mainmenu ul li a:hover,
+.mainmenu ul li.current_page_item a,
+.section-title h2::after,
+a.edu-btn:hover,
+.single-course h4 span,
+.single-footer-widget ul li a:hover,
+.footer-copyright-area p span,
+.all-page-text ul li:last-child,
+.portfolio-menu ul li:hover,
+.portfolio-menu ul li.active,
+.panel-title>a {
+    color: #e34b11
+}
+
+body .footer-social-icon>a:hover,
+body .blog-pagination .pagination li.active a {
+    border-color: #e34b11
+}
+
+a.slide-btn,
+a.slide-btn:last-child:hover,
+.slider-area .owl-prev,
+.slider-area .owl-next,
+.section-title h2::before,
+.trainer-social-icon li:hover a,
+.testi-slider .owl-nav div:hover,
+.testi-area .owl-dot.active,
+.testi-area .owl-dot:hover,
+.quote-area,
+.footer-social-icon>a:hover,
+.course-form input[type="submit"]:hover,
+.portfolio-menu ul li:before,
+a.error-btn:before,
+a.blog-btn:hover:before,
+a.blog-btn:hover:after,
+.blog-search input[type="submit"],
+.blog-pagination .pagination li.active a,
+.comment-form-wrap input[type="submit"]:hover,
+.slicknav_nav a:hover,
+.slicknav_nav .slicknav_row:hover,
+.member-area:before,
+.faq-area .panel-title>a.collapsed,
+.barfiller .tip {
+    background-color: #e34b11
+}
+
+
+/*---------------------------------------------------
+            2. Header top area css
+---------------------------------------------------*/
+@font-face {
+    font-family: StylesBangla;
+    src: url(fonts/StylesBangla.ttf);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "StylesBangla", sans-serif;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #777777;
+    font-family: "StylesBangla", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+.header-top-area {
+    padding: 10px 0;
+    background-color: #000000;
+}
+
+.header-info {}
+
+.header-info ul {}
+
+.header-info ul li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #cacaca;
+    font-size: 12px;
+    font-weight: 600
+}
+
+.header-info ul li:last-child {
+    margin-right: 0
+}
+
+.header-info ul li i {
+    margin-right: 5px;
+}
+
+.header-social-icon {
+    float: right;
+}
+
+.header-social-icon a {
+    font-size: 12px;
+    display: inline-block;
+    color: #cacaca;
+    margin-left: 15px;
+}
+
+.header-social-icon a:hover {}
+
+
+/*---------------------------------------------------
+            3. Header bottom area  css
+---------------------------------------------------*/
+
+.header-bottom-area {
+    padding: 24px 0;
+    background-color: #fff
+}
+
+.logo {}
+
+.logo a {
+    color: #494949
+}
+
+.logo-text {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #333
+}
+
+.logo img {
+    height: 45px;
+    width: 260px;
+}
+
+.mainmenu {
+    float: right;
+}
+
+.mainmenu li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainmenu li a {
+    color: #333;
+    display: block;
+    font-size: 16px;
+    margin-left: 30px;
+    text-transform: capitalize;
+    font-weight: 500
+}
+
+.mainmenu ul li a:hover,
+.mainmenu ul li.current_page_item a {}
+
+.mainmenu ul li ul li:hover>a,
+.mainmenu ul li ul li.current_page_item>a {
+    text-decoration: none;
+    background-color: #F1F1F1;
+}
+
+.mainmenu li ul {
+    background: #fff none repeat scroll 0 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: left;
+    top: 130px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 200px;
+    z-index: -1;
+}
+
+.mainmenu li ul li {
+    display: block;
+}
+
+.mainmenu li ul li a {
+    margin: 0;
+    padding: 12px 20px;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.mainmenu li:hover ul {
+    opacity: 1;
+    top: 25px;
+    visibility: visible;
+    z-index: 99;
+}
+
+
+/*---------------------------------------------------
+            4. Slider area  css
+---------------------------------------------------*/
+
+.slider-area {
+    overflow: hidden
+}
+
+.single-slider {
+    height: 650px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1
+}
+
+.single-slider:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #000;
+    opacity: 0.7;
+    z-index: -1
+}
+
+.slider-content {}
+
+.slider-content {}
+
+.slider-content h3 {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: #fff;
+    text-transform: uppercase
+}
+
+.slider-content h2 {
+    font-size: 30px;
+    color: #fff;
+    margin: 0 0 20px;
+    font-weight: 400;
+    text-transform: uppercase
+}
+
+.slider-content p {
+    color: #fff;
+}
+
+a.slide-btn {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-right: 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+a.slide-btn:last-child {
+    background-color: #fff
+}
+
+a.slide-btn:last-child:hover {
+    color: #fff
+}
+
+.slider-content h2 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.slider-content p {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.slider-content a {
+    -webkit-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+    -webkit-animation-duration: 2.2s;
+    animation-duration: 2.2s;
+}
+
+.slider-area .owl-prev,
+.slider-area .owl-next {
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    left: -60px;
+    line-height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 34px;
+}
+
+.slider-area .owl-next {
+    left: auto;
+    right: -60px
+}
+
+.slider-area:hover .owl-prev {
+    left: 0;
+}
+
+.slider-area:hover .owl-next {
+    right: 0
+}
+
+
+/*---------------------------------------------------
+            5. Course area  css
+---------------------------------------------------*/
+
+.section-gray {
+    background-color: #F1F1F1
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-title h2 {
+    margin: 0 0 10px;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: 700
+}
+
+.section-title p {}
+
+.course-area {}
+
+.single-course {
+    margin-bottom: 30px;
+}
+
+.course-img {
+    overflow: hidden;
+    position: relative
+}
+
+.course-img:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    content: "";
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    opacity: 0
+}
+
+.single-course:hover .course-img:before {
+    opacity: 0.3
+}
+
+.course-img img {
+    width: 100%;
+}
+
+.course-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.course-info h5 {
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.course-info h5 i {
+    margin-right: 5px;
+}
+
+.course-info h5 span {
+    float: right;
+}
+
+.single-course h4 {
+    font-size: 18px;
+    margin: 15px 0 20px;
+    text-transform: capitalize;
+}
+
+.single-course h4 span {
+    float: right;
+}
+
+.single-course p {}
+
+a.edu-btn {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block
+}
+
+a.edu-btn:first-letter {
+    text-transform: uppercase
+}
+
+a.edu-btn i {
+    margin-left: 3px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+a.edu-btn:hover i {
+    margin-left: 10px;
+}
+
+
+/*---------------------------------------------------
+            6. About area  css
+---------------------------------------------------*/
+
+.about-area {}
+
+.text-holder h1 {
+    color: #fff;
+    margin: 0 0 40px;
+    padding: 0 0 30px;
+    position: relative;
+}
+
+.text-holder h1::after {
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 60px;
+}
+
+.about-content {}
+
+.about-content h2 {
+    text-transform: uppercase;
+}
+
+.barfiller {
+    width: 100%;
+    height: 8px;
+    background: #F1F1F1;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.barfiller .fill {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+}
+
+.barfiller .tipWrap {
+    display: none;
+}
+
+.barfiller .tip {
+    margin-top: -30px;
+    padding: 0 4px;
+    font-size: 11px;
+    color: #fff;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+.barfiller .tip:after {
+    border: solid;
+    border-color: rgba(227, 75, 17, 1) transparent;
+    border-width: 6px 6px 0 6px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 9px;
+    top: 100%;
+    z-index: 9
+}
+
+.skill {}
+
+.single-skill {}
+
+.single-skill h4 {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400
+}
+
+
+/*---------------------------------------------------
+            7. Faq area  css
+---------------------------------------------------*/
+
+.faq-area .panel-group .panel {
+    background-color: #fff;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.faq-area .panel-default>.panel-heading {
+    background-color: transparent;
+    border-color: #ccc;
+    color: #fff;
+}
+
+.faq-area .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top: 0 none;
+}
+
+.faq-area .panel-heading {
+    padding: 0;
+}
+
+.faq-area .panel-title {
+    color: inherit;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.faq-area .panel-title>a {
+    display: block;
+    padding: 15px 30px;
+    font-weight: 700;
+}
+
+.faq-area .panel-title>a.collapsed {}
+
+.faq-area .panel-body {
+    padding: 15px 30px;
+}
+
+.faq-area .panel-heading a::after {
+    content: "\f056";
+    float: right;
+    font-family: "FontAwesome";
+}
+
+.faq-area .panel-heading a.collapsed::after {
+    content: "\f055";
+}
+
+.faq-area .panel-heading a.collapsed {
+    color: #fff;
+}
+
+
+/*---------------------------------------------------
+            8. Counter area  css
+---------------------------------------------------*/
+
+.counter-area {
+    background: url(img/counter-bg.jpg)no-repeat scroll center top / cover;
+    position: relative;
+    z-index: 1
+}
+
+.counter-area:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: -1;
+    content: "";
+}
+
+.counter-img {
+    float: left;
+}
+
+.counter-img img {}
+
+.counter-detail {
+    color: #cacaca;
+    padding-left: 70px;
+}
+
+.counter-detail h4 {
+    color: #cacaca;
+    font-size: 35px;
+    margin: 0;
+}
+
+.counter-detail h4 {}
+
+.counter-detail p {
+    margin: 0;
+    text-transform: capitalize
+}
+
+
+/*---------------------------------------------------
+            9. Trainer area  css
+---------------------------------------------------*/
+
+.trainer-area {}
+
+.single-trainer {
+    border: 2px solid #F1F1F1;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.single-trainer img {
+    width: 100%
+}
+
+.trainer-detail {
+    background-color: #f1f1f1;
+    bottom: -42px;
+    left: 0;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+.single-trainer:hover .trainer-detail {
+    bottom: 0
+}
+
+.trainer-detail h4 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.trainer-detail h4 span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    text-transform: lowercase
+}
+
+.trainer-social-icon {
+    margin-top: 10px;
+}
+
+.trainer-social-icon li {
+    display: inline-block;
+}
+
+.trainer-social-icon li a {
+    background-color: #333;
+    color: #F1F1F1;
+    display: inline-block;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 4px;
+    text-align: center;
+    width: 30px;
+}
+
+.trainer-social-icon li a i {}
+
+.trainer-social-icon li:hover a i {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.trainer-social-icon li:hover a {
+    color: #fff;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.trainer-social-icon {
+    margin-top: 20px;
+}
+
+.load {
+    text-align: center
+}
+
+a.load-btn {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 20px;
+}
+
+a.load-btn:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'FontAwesome';
+    content: "\f110";
+}
+
+
+/*---------------------------------------------------
+            10. Quote area  css
+---------------------------------------------------*/
+
+.quote-area {
+    padding: 30px 0;
+}
+
+.quote-area h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 6px 0 0;
+}
+
+a.quote-btn {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    float: right;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+    position: relative;
+    z-index: 1
+}
+
+a.quote-btn:hover {
+    color: #333;
+}
+
+a.quote-btn:before {
+    width: 100%;
+    height: 0%;
+    background-color: #fff;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+a.quote-btn:hover:before {
+    height: 100%
+}
+
+
+/*---------------------------------------------------
+            11. Member area  css
+---------------------------------------------------*/
+
+.member-area {
+    position: relative;
+    z-index: 1;
+}
+
+.member-area:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    content: "";
+    z-index: -1;
+}
+
+.member-img {}
+
+.member-img>img {
+    width: 100%;
+}
+
+
+/*---------------------------------------------------
+            12. Client area  css
+---------------------------------------------------*/
+
+.client-area {}
+
+.client-list {}
+
+.single-client {}
+
+.single-client img {}
+
+
+/*---------------------------------------------------
+           13. Testi area css
+---------------------------------------------------*/
+
+.testi-area {}
+
+.testi-area .section-title h2::after {
+    background-color: #F1F1F1
+}
+
+.testi-list {}
+
+.single-testi {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.testi-img {
+    float: left;
+}
+
+.testi-img img {
+    width: 120px ! important;
+    height: 120px ! important;
+}
+
+.testi-detail {
+    padding-left: 130px
+}
+
+.testi-detail h4 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700
+}
+
+.testi-detail h4 span {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+    text-transform: lowercase
+}
+
+.testi-detail p {}
+
+.testi-area .owl-dots {
+    text-align: center;
+    margin-top: 30px
+}
+
+.testi-area .owl-dot {
+    height: 6px;
+    width: 10px;
+    background-color: #333;
+    display: inline-block;
+    margin: 0 3px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+.testi-area .owl-dot.active,
+.testi-area .owl-dot:hover {
+    width: 20px;
+}
+
+
+/*---------------------------------------------------
+            14. News area  css
+---------------------------------------------------*/
+
+.news-area {}
+
+.single-news {
+    -webkit-box-shadow: 0 10px 20px rgba(34, 30, 31, 0.25);
+    box-shadow: 0 10px 20px rgba(34, 30, 31, 0.25);
+}
+
+.news-img {
+    overflow: hidden
+}
+
+.news-img img {
+    width: 100%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.single-news:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.news-detail {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.news-detail h4 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.news-meta {
+    margin-bottom: 5px;
+}
+
+.news-meta span {
+    margin-right: 10px;
+    font-size: 14px;
+    text-transform: capitalize
+}
+
+.news-meta span i {
+    margin-right: 5px;
+}
+
+.news-detail p {}
+
+
+/*---------------------------------------------------
+            15. Footer area css
+---------------------------------------------------*/
+
+.footer-area {
+    background-color: #222222;
+    padding: 70px 0
+}
+
+.footer-widget-title {
+    color: #fff;
+    margin: 0 0 32px;
+    font-size: 20px;
+    text-transform: capitalize
+}
+
+.single-footer-widget {}
+
+.single-footer-widget p {
+    color: #cacaca;
+}
+
+.single-footer-widget ul {}
+
+.single-footer-widget ul li {}
+
+.single-footer-widget ul li a {
+    display: inline-block;
+    color: #cacaca;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding-left: 14px;
+    position: relative;
+    line-height: 30px;
+}
+
+.single-footer-widget ul li a:hover {}
+
+.single-footer-widget ul li a:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    left: 0;
+    top: 0;
+    position: absolute
+}
+
+.footer-logo h3 {
+    font-size: 20px;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 10px 16px;
+    display: inline-block
+}
+
+.footer-social-icon {
+    margin-top: 20px;
+}
+
+.footer-social-icon>a {
+    border: 1px solid #cacaca;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 4px;
+    text-align: center;
+    width: 30px;
+}
+
+.single-footer-widget strong {
+    display: block;
+}
+
+
+/*---------------------------------------------------
+            16. Footer copyright area  css
+---------------------------------------------------*/
+
+.footer-copyright-area {
+    padding: 20px 0;
+    background-color: #000
+}
+
+.footer-copyright-area p {
+    color: #cacaca;
+    margin: 0;
+}
+
+.design-by {
+    float: right;
+}
+
+.footer-copyright-area p span {}
+
+
+/*---------------------------------------------------
+            17. Responsive menu wrap  css
+---------------------------------------------------*/
+
+.responsive-menu-wrap {
+    display: none;
+    margin-top: -16px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    z-index: 999
+}
+
+.responsive-menu-wrap .slicknav_menu {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize
+}
+
+.slicknav_btn {
+    margin: 0;
+    border-radius: 0
+}
+
+.slicknav_nav {
+    background: #333 none repeat scroll 0 0;
+    border-radius: 0;
+    width: 220px;
+}
+
+.slicknav_nav a:hover {
+    border-radius: 0;
+    color: #fff;
+}
+
+
+/*---------------------------------------------------
+            18. All page area  css
+---------------------------------------------------*/
+
+.all-page-area {
+    background: url(img/page-bg.jpg) no-repeat scroll center top / cover;
+    position: relative;
+    z-index: 1
+}
+
+.all-page-area:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    content: "";
+    z-index: -1
+}
+
+.all-page-text {
+    text-align: center
+}
+
+.all-page-text h1 {
+    color: #fff;
+    font-size: 30px;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+}
+
+.all-page-text ul {}
+
+.all-page-text ul li {
+    display: inline;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize
+}
+
+.all-page-text ul li a {
+    display: inline-block;
+    color: #fff;
+}
+
+.all-page-text ul span {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+
+/*---------------------------------------------------
+        19. Register area  css
+---------------------------------------------------*/
+
+.register-area {}
+
+.course-form {}
+
+.course-form>h2 {
+    font-size: 26px;
+    margin: 0 0 30px;
+    text-transform: capitalize;
+}
+
+.register-area .form-control {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    color: #666;
+    display: block;
+    font-size: 15px;
+    height: 46px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.course-form textarea {
+    resize: none;
+}
+
+.course-form input[type="submit"] {
+    background-color: #333;
+    border: medium none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    padding: 12px 30px;
+    text-transform: capitalize;
+    font-size: 18px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+
+/*---------------------------------------------------
+        20. Portfolio area  css
+---------------------------------------------------*/
+
+.portfolio-area {}
+
+.portfolio-menu {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-menu ul {}
+
+.portfolio-menu ul li {
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.portfolio-menu ul li:before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    content: "";
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+.portfolio-menu ul li:hover:before,
+.portfolio-menu ul li.active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+}
+
+.single-portfolio {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.single-portfolio img {
+    width: 100%
+}
+
+.p-hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+.single-portfolio:hover .p-hover {
+    opacity: 1
+}
+
+.p-hover a {
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+
+.single-portfolio:hover .p-hover a,
+.single-portfolio:hover .p-hover h4 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.p-hover h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: lowercase;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.p-hover h4:first-letter {
+    text-transform: uppercase
+}
+
+.p-hover h4 span {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/*---------------------------------------------------
+            21. Error area  css
+---------------------------------------------------*/
+
+.error-area {}
+
+.error-text {
+    text-align: center
+}
+
+.error-text h1 {
+    font-size: 100px;
+    margin: 0 0 20px;
+}
+
+.error-text h4 {
+    margin: 0 0 10px;
+}
+
+.error-text p {}
+
+a.error-btn {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1
+}
+
+a.error-btn:hover {
+    color: #fff;
+}
+
+a.error-btn:before {
+    width: 100%;
+    height: 0%;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+a.error-btn:hover:before {
+    height: 100%
+}
+
+
+/*---------------------------------------------------
+            22. Blog area  css
+---------------------------------------------------*/
+
+.blog-area {}
+
+.blog-left {}
+
+.single-blog {
+    margin-bottom: 40px;
+}
+
+.single-blog img {
+    width: 100%
+}
+
+.single-blog h3 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+
+.blog-meta {
+    margin-bottom: 10px;
+}
+
+.blog-meta a {
+    color: #666;
+    font-size: 14px;
+    margin-right: 10px;
+    text-transform: capitalize
+}
+
+.blog-meta a i {
+    margin-right: 5px;
+}
+
+.single-blog p {}
+
+a.blog-btn {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    position: relative;
+    z-index: 1
+}
+
+a.blog-btn:before {
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+a.blog-btn:after {
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+a.blog-btn:hover:before,
+a.blog-btn:hover:after {
+    width: 50%;
+}
+
+.pagination {
+    border-radius: 4px;
+    display: inline-block;
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+.pagination>li {
+    display: inline;
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: 0;
+}
+
+.blog-pagination .pagination li.active a {
+    color: #fff;
+}
+
+.blog-pagination .pagination a {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.blog-right {}
+
+.blog-search {
+    margin-bottom: 40px;
+}
+
+.blog-search .form-control {
+    width: calc(100% - 80px);
+    border-radius: 0;
+    padding: 10px 20px;
+    float: left;
+    height: 44px;
+    font-size: 14px;
+    border-color: #ddd;
+}
+
+.blog-search input[type="submit"] {
+    border: medium none;
+    color: #fff;
+    font-weight: 500;
+    height: 44px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 80px;
+}
+
+.single-right-blog-widget {
+    margin-bottom: 70px;
+}
+
+.single-right-blog-widget>h4 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+.single-right-blog-widget ul {}
+
+.single-right-blog-widget ul li {}
+
+.single-right-blog-widget ul li a {
+    color: #333;
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.single-right-blog-widget ul li a span {
+    color: #666;
+    display: block;
+    font-weight: 300
+}
+
+
+/*---------------------------------------------------
+            23. Comments area  css
+---------------------------------------------------*/
+
+.comment-item {
+    border-bottom: 1px solid #eef1f4;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+}
+
+.comment-title {
+    margin: 0 0 30px;
+}
+
+.comment-metadata {
+    color: #a3a3a3;
+    font-size: 12px;
+}
+
+.comment-reply-link {
+    font-weight: 700;
+}
+
+.comment-form-title {
+    margin: 0 0 30px;
+}
+
+.comment-form-wrap .form-control {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    color: #666;
+    height: 44px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.comment-form-wrap textarea {
+    resize: none;
+}
+
+.comment-form-wrap input[type="submit"] {
+    background: #333 none repeat scroll 0 0;
+    border: medium none;
+    font-size: 14px;
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+
+/*---------------------------------------------------
+            24. Contact area  css
+---------------------------------------------------*/
+
+#googleMap {
+    height: 400px;
+}
+
+.contact-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    color: #666;
+    height: 44px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input[type="submit"] {
+    background: #333 none repeat scroll 0 0;
+    border: medium none;
+    font-size: 14px;
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+.contact-title {
+    text-transform: capitalize;
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.contact-info {}
+
+.contact-info p {
+    position: relative;
+    padding-left: 20px
+}
+
+.contact-info p span {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slicknav_nav .slicknav_row:hover {
+    border-radius: 0;
+    color: #fff;
+}
