@@ -1,0 +1,7 @@
+busness
+id
+Product_title
+Product_price
+Category
+Description
+image
